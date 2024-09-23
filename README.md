@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Clima e Imagens de Cidades 🌤️🌆
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto permite ao usuário consultar o clima de uma cidade e visualizar uma imagem correspondente ao estado/cidade, utilizando as APIs **OpenWeather** para dados climáticos e **Unsplash** para exibição de imagens.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- **Consulta em tempo real** de informações climáticas.
+- **Exibição de imagens** representativas da cidade ou estado usando a API do Unsplash.
+- **Interface responsiva** desenvolvida em React.
+- **Gráficos** para visualização das informações climáticas (utilizando **chart.js**).
 
-### `npm start`
+## Pré-requisitos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Antes de começar, certifique-se de ter instalado em sua máquina:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Node.js** (versão >= 14.x)
+- **npm** ou **yarn**
 
-### `npm test`
+## Instalação   
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone o repositório**:
 
-### `npm run build`
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Instale as dependências**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Usando npm: npm install
+    Usando yarn: yarn install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Configuração das APIs**:
 
-### `npm run eject`
+    Crie um arquivo .env na raiz do projeto e adicione suas chaves de API:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+        REACT_APP_OPENWEATHER_API_KEY=SUA_CHAVE_DA_API_OPENWEATHER
+        REACT_APP_UNSPLASH_ACCESS_KEY=SUA_CHAVE_DA_API_UNSPLASH
+    
+    Substitua SUA_CHAVE_DA_API_OPENWEATHER e SUA_CHAVE_DA_API_UNSPLASH pelas suas chaves das respectivas APIs
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Como Usar
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Iniciar o servidor de desenvolvimento:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Após a instalação das dependências e configuração das APIs, você pode iniciar o servidor de desenvolvimento:
 
-## Learn More
+Usando npm:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Copiar código
+npm start
+Ou usando yarn:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Copiar código
+yarn start
+Buscar clima e imagem de uma cidade:
 
-### Code Splitting
+Digite o nome de uma cidade no campo de busca.
+O sistema irá mostrar as condições climáticas da cidade e exibir uma imagem representativa.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Principais Dependências
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Axios: Para fazer requisições HTTP.
+    leaflet: Para exibir mapas e coordenadas geográficas.
+    chart.js e react-chartjs-2: Para visualização de dados climáticos em gráficos.
+    react-leaflet: Integração entre Leaflet e React.
+    OpenWeather API: Para informações climáticas.
+    Unsplash API: Para buscar imagens das cidades/estados.

@@ -1,0 +1,23 @@
+.weather-container {
+    background-color: #f0f8ff; /* Fundo claro */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px 0; /* Margem superior e inferior */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .weather-title {
+    text-align: center; /* Centraliza o título */
+    color: #333; /* Cor do texto */
+  }
+  
+  .weather-info {
+    font-family: 'Arial', sans-serif; /* Fonte padrão */
+    color: #555; /* Cor do texto */
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+  }
+  
+  .weather-info p {
+    margin: 5px 0; /* Espaçamento entre parágrafos */
+  }
+  

@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4ff; /* Fundo suave */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.5s ease; /* Transição suave para o fundo */
+}
+
+form {
+    background-color: #fff; /* Fundo do formulário */
+    border-radius: 12px; /* Cantos mais arredondados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+    max-width: 400px;
+    width: 90%; /* Largura responsiva */
+    margin: 2.5px; /* Margens laterais */
+    transition: transform 0.3s ease; /* Transição suave para o formulário */
+}
+
+h1 {
+    text-align: center;
+    color: #0077cc; /* Título em azul */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espaço entre os grupos do formulário */
+}
+
+label {
+    display: block; /* Faz o label ocupar toda a largura */
+    margin-bottom: 8px; /* Espaço entre o label e o select */
+    font-weight: bold;
+}
+
+select {
+    width: 100%; /* Faz o select ocupar toda a largura do grupo */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #0077cc; /* Borda azul */
+    border-radius: 6px; /* Cantos arredondados */
+    transition: border-color 0.3s ease; /* Transição suave para a borda */
+}
+
+select:focus {
+    border-color: #005fa3; /* Azul mais escuro ao focar */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #0077cc;
+    border-radius: 6px; /* Cantos arredondados */
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave para itens */
+}
+
+li:hover {
+    background-color: #e0f0ff; /* Azul claro ao passar o mouse */
+    transform: scale(1.02); /* Suavização de escalonamento */
+}
+
+button {
+    background-color: #0077cc; /* Azul do botão */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px; /* Cantos arredondados */
+    cursor: pointer;
+    width: 100%; /* Faz o botão ocupar toda a largura do formulário */
+    transition: background-color 0.3s ease; /* Transição suave para o botão */
+}
+
+button:hover {
+    background-color: #005fa3; /* Azul mais escuro ao passar o mouse */
+}
+
+button:disabled {
+    background-color: #ccc; /* Cor de fundo do botão desabilitado */
+    cursor: not-allowed; /* Cursor não permitido ao passar sobre o botão desabilitado */
+}
+
+p {
+    text-align: center;
+    margin-top: 10px; /* Espaçamento acima da mensagem de erro */
+}

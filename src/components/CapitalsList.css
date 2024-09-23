@@ -1,0 +1,21 @@
+.capitals-list {
+    list-style-type: none; /* Remove marcadores padrão */
+    padding: 0; /* Remove espaçamento interno */
+    margin: 0; /* Remove margem */
+  }
+  
+  .capitals-list li {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
+    border: 1px solid #ddd; /* Borda sutil */
+    border-radius: 5px; /* Cantos arredondados */
+    padding: 10px; /* Espaçamento interno */
+    margin: 5px 0; /* Margem entre os itens */
+    font-size: 1.2em; /* Tamanho da fonte */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  .capitals-list li:hover {
+    background-color: rgba(255, 255, 255, 1); /* Efeito de hover */
+    cursor: pointer; /* Muda o cursor no hover */
+  }
+  
